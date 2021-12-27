@@ -2,9 +2,18 @@ const assert = require('assert');
 const { Given, When, Then } = require('@cucumber/cucumber');
 
 function isItFriday(today) {
-  return 'Nope'
-  // We'll leave the implementation blank for now
+  if (today === "Friday") {
+    return "TGIF";
+  } else {
+    return "Nope";
+  }  // We'll leave the implementation blank for now
 }
+
+Given('today is Friday', function () {
+  // Write code here that turns the phrase above into concrete actions
+  this.today = 'Friday';
+});
+
 
   Given('today is Sunday', function () {
     // Write code here that turns the phrase above into concrete actions
