@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js",
-    "test:cypress": "cypress run --spec **/*.cy.feature"
+    "test:cypress": "cypress run --spec **/*.spec.feature"
   },
   "keywords": [],
   "author": "",
