@@ -2,6 +2,7 @@ const assert = require('assert');
 const { Given, When, Then } = require('@cucumber/cucumber');
 
 function isItFriday(today) {
+  return 'Nope'
   // We'll leave the implementation blank for now
 }
 
@@ -15,7 +16,8 @@ function isItFriday(today) {
     this.actualAnswer = isItFriday(this.today);
     });
 
-  Then('I should be told {string}', function (string) {
+  Then('I should be told {string}', function (expectedAnswer) {
     // Write code here that turns the phrase above into concrete actions
-    assert.strictEqual(this.actualAnswer, expectedAnswer);    });
+    assert.strictEqual(this.actualAnswer, expectedAnswer);
+      });
 
